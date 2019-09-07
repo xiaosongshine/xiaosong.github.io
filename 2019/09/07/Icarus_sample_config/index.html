@@ -10,19 +10,19 @@
 <title>Icarus简单配置 - 深度思考</title>
 
 
-    <meta name="description" content="Icarus的配置包括两部分：主题配置和后台配置。 主题配置Icarus使用_config.yml文件进行全局页面布局，插件和窗口小部件设置。它将检查并验证配置文件，指出任何配置错误，并在不存在的情况下为您生成一个配置文件。您可以随时从*.spec.js文件themes/icarus/includes/specs夹中的文件检查规格。 默认主题配置包含以下部分：  网站首选项和页面元数据 顶部导航栏">
+    <meta name="description" content="Icarus的配置包括两部分：主题配置和后台配置。">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Icarus简单配置">
 <meta property="og:url" content="http://deepmiss.cn/2019/09/07/Icarus_sample_config/index.html">
 <meta property="og:site_name" content="深度思考">
-<meta property="og:description" content="Icarus的配置包括两部分：主题配置和后台配置。 主题配置Icarus使用_config.yml文件进行全局页面布局，插件和窗口小部件设置。它将检查并验证配置文件，指出任何配置错误，并在不存在的情况下为您生成一个配置文件。您可以随时从*.spec.js文件themes/icarus/includes/specs夹中的文件检查规格。 默认主题配置包含以下部分：  网站首选项和页面元数据 顶部导航栏">
+<meta property="og:description" content="Icarus的配置包括两部分：主题配置和后台配置。">
 <meta property="og:locale" content="ch">
 <meta property="og:image" content="https://images.unsplash.com/photo-1468476396571-4d6f2a427ee7?ixlib=rb-1.2.1&auto=format&fit=crop&w=2044&q=80">
-<meta property="og:updated_time" content="2019-09-07T13:14:21.740Z">
+<meta property="og:updated_time" content="2019-09-07T19:04:47.202Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Icarus简单配置">
-<meta name="twitter:description" content="Icarus的配置包括两部分：主题配置和后台配置。 主题配置Icarus使用_config.yml文件进行全局页面布局，插件和窗口小部件设置。它将检查并验证配置文件，指出任何配置错误，并在不存在的情况下为您生成一个配置文件。您可以随时从*.spec.js文件themes/icarus/includes/specs夹中的文件检查规格。 默认主题配置包含以下部分：  网站首选项和页面元数据 顶部导航栏">
+<meta name="twitter:description" content="Icarus的配置包括两部分：主题配置和后台配置。">
 <meta name="twitter:image" content="https://images.unsplash.com/photo-1468476396571-4d6f2a427ee7?ixlib=rb-1.2.1&auto=format&fit=crop&w=2044&q=80">
 
 
@@ -178,25 +178,19 @@
             
         </h1>
         <div class="content">
-            <p>Icarus的配置包括两部分：主题配置和后台配置。</p>
-<h4 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h4><p>Icarus使用_config.yml文件进行全局页面布局，插件和窗口小部件设置。它将检查并验证配置文件，指出任何配置错误，并在不存在的情况下为您生成一个配置文件。您可以随时从*.spec.js文件themes/icarus/includes/specs夹中的文件检查规格。</p>
-<p>默认主题配置包含以下部分：</p>
-<ul>
-<li>网站首选项和页面元数据</li>
-<li>顶部导航栏链接</li>
-<li>页脚链接</li>
-<li>文章显示设置</li>
-<li>评论，分享和搜索插件设置</li>
-<li>边栏小部件设置</li>
-<li>其他显示和分析插件</li>
-<li>CDN设置</li>
-</ul>
-<p>大多数设置都记录在_config.yml文件中。有关配置插件的更多详细信息，请参阅联机文档。</p>
-<h4 id="后台配置"><a href="#后台配置" class="headerlink" title="后台配置"></a>后台配置</h4><p>除了全局主题配置，您还可以在任何帖子中进行自定义。也就是说，您可以从帖子覆盖主题配置。假设您要在帖子中显示不同的导航栏菜单。要做到这一点，你只需要将navbar设置放在帖子的前面：</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">navbar:</span><br><span class="line">    menu:</span><br><span class="line">        Home: /</span><br><span class="line">        Special!: /special</span><br></pre></td></tr></table></figure>
-
-<p>您在此处设置的配置仅适用于此帖子。此功能对于向特定受众显示自定义/优化页面非常有用。例如，您可以根据页面查看器的国家/地区和语言启用更快的CDN或本地化评论服务。</p>
-
+            <div id="hbe-security">
+  <div class="hbe-input-container">
+  <input type="password" class="hbe-form-control" id="pass" placeholder="测试加密，密码 1234567890">
+    <label for="pass">测试加密，密码 1234567890</label>
+    <div class="bottom-line"></div>
+  </div>
+</div>
+<div id="decryptionError" style="display: none;">Incorrect Password!</div>
+<div id="noContentError" style="display: none;">No content to display!</div>
+<div id="encrypt-blog" style="display:none">
+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
+</div>
+<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
         </div>
         
         <div class="level is-size-7 is-uppercase">
@@ -264,7 +258,7 @@
 
 <div class="card">
     <div class="card-content">
-        <h3 class="title is-5 has-text-weight-normal">Comentarios</h3>
+        <h3 class="title is-5 has-text-weight-normal">Comments</h3>
         
 <div id="comment-container"></div>
 <link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
@@ -325,7 +319,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Entradas
+                        Posts
                     </p>
                     <p class="title has-text-weight-normal">
                         2
@@ -335,7 +329,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Categoria
+                        Category
                     </p>
                     <p class="title has-text-weight-normal">
                         1
@@ -345,7 +339,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Etiqueta
+                        Tag
                     </p>
                     <p class="title has-text-weight-normal">
                         1
@@ -355,7 +349,7 @@
         </nav>
         <div class="level">
             <a class="level-item button is-link is-rounded" href="https://github.com/xiaosongshine" target="_blank">
-                SEGUIR</a>
+                Follow</a>
         </div>
         
         
@@ -408,7 +402,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Categorias
+                Categories
             </h3>
             <ul class="menu-list">
             <li>
@@ -429,7 +423,7 @@
 <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Nube de etiquetas
+            Tag Cloud
         </h3>
         <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
     </div>
@@ -493,7 +487,7 @@
 <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recientes
+            Recent
         </h3>
         
         <article class="media">
@@ -542,7 +536,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archivos
+            Archives
         </h3>
         <ul class="menu-list">
         
@@ -566,7 +560,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Etiquetas
+                Tags
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -597,7 +591,7 @@
 <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recientes
+            Recent
         </h3>
         
         <article class="media">
@@ -646,7 +640,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archivos
+            Archives
         </h3>
         <ul class="menu-list">
         
@@ -670,7 +664,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Etiquetas
+                Tags
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -865,10 +859,10 @@ document.addEventListener('DOMContentLoaded', function () {
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Entradas',
+                POSTS: 'Posts',
                 PAGES: 'Pages',
-                CATEGORIES: 'Categorias',
-                TAGS: 'Etiquetas',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
                 UNTITLED: '(Untitled)',
             },
             CONTENT_URL: '/content.json',
